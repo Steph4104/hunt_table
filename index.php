@@ -17,7 +17,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">@</span>
   </div>
-  <input type="text" id='result' class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="number" id='result' name='result' class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
 </div>
 
     <table class="table table-bordered">
@@ -40,7 +40,7 @@
     <tr>
       <td>0</th>
       <td><button id="go" type='submit'>GO!</button></td>
-      <td><button id='erase'><-</button></td>
+      <td><button id='erase' type='button'><-</button></td>
     </tr>
   </tbody>
 </table>
@@ -66,7 +66,7 @@ jQuery(':button').click(function () {
     }
     else if (this.id == 'go') {
         alert('Button go was clicked');
-        $('#result').val(firstvalue.slice(0,-1));
+        // $('#result').val(firstvalue.slice(0,-1));
 
     }
 });
