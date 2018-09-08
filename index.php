@@ -24,21 +24,21 @@
   <tbody>
     <tr>
       <td><button id='btn1' type='button' value='1'>1</button></th>
-      <td>2</th>
-      <td>3</th>
+      <td><button id='btn2' type='button' value='2'>2</button></th>
+      <td><button id='btn3' type='button' value='3'>3</button></th>
     </tr>
     <tr>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
+      <td><button id='btn4' type='button' value='4'>4</button></td>
+      <td><button id='btn5' type='button' value='5'>5</button></td>
+      <td><button id='btn6' type='button' value='6'>6</button></td>
     </tr>
     <tr>
-      <td>7</td>
-      <td>8</td>
-      <td>9</td>
+      <td><button id='btn7' type='button' value='7'>7</button></td>
+      <td><button id='btn8' type='button' value='8'>8</button></td>
+      <td><button id='btn9' type='button' value='9'>9</button></td>
     </tr>
     <tr>
-      <td>0</th>
+      <td><button id='btn0' type='button' value='0'>0</button></th>
       <td><button id="go" type='submit'>GO!</button></td>
       <td><button id='erase' type='button'><-</button></td>
     </tr>
@@ -55,17 +55,59 @@ $(document).ready(function () {
 jQuery(':button').click(function () {
     var firstvalue = $('#result').val();
     if (this.id == 'btn1') {
-        alert('Button 1 was clicked');
+        // alert('Button 1 was clicked');
         var secondvalue = firstvalue + 1;
         $('#result').val(secondvalue);
-    }
+    }    if (this.id == 'btn2') {
+            // alert('Button 1 was clicked');
+            var secondvalue = firstvalue + 2;
+            $('#result').val(secondvalue);
+        }    if (this.id == 'btn3') {
+                // alert('Button 1 was clicked');
+                var secondvalue = firstvalue + 3;
+                $('#result').val(secondvalue);
+            }    if (this.id == 'btn4') {
+                    // alert('Button 1 was clicked');
+                    var secondvalue = firstvalue + 4;
+                    $('#result').val(secondvalue);
+                }
+                if (this.id == 'btn5') {
+                    // alert('Button 1 was clicked');
+                    var secondvalue = firstvalue + 5;
+                    $('#result').val(secondvalue);
+                }
+                if (this.id == 'btn6') {
+                    // alert('Button 1 was clicked');
+                    var secondvalue = firstvalue + 6;
+                    $('#result').val(secondvalue);
+                }
+                if (this.id == 'btn7') {
+                    // alert('Button 1 was clicked');
+                    var secondvalue = firstvalue + 7;
+                    $('#result').val(secondvalue);
+                }
+                if (this.id == 'btn8') {
+                    // alert('Button 1 was clicked');
+                    var secondvalue = firstvalue + 8;
+                    $('#result').val(secondvalue);
+                }
+                if (this.id == 'btn9') {
+                    // alert('Button 1 was clicked');
+                    var secondvalue = firstvalue + 9;
+                    $('#result').val(secondvalue);
+                }
+                if (this.id == 'btn0') {
+                    // alert('Button 1 was clicked');
+                    var secondvalue = firstvalue + 0;
+                    $('#result').val(secondvalue);
+                }
     else if (this.id == 'erase') {
-        alert('Button erase was clicked');
+        // alert('Button erase was clicked');
         $('#result').val(firstvalue.slice(0,-1));
 
     }
     else if (this.id == 'go') {
-        alert('Button go was clicked');
+        // alert('Button go was clicked');
         // $('#result').val(firstvalue.slice(0,-1));
 
     }
